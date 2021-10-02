@@ -17,6 +17,6 @@ Bibliotecas utilizadas:
 * react-tabs;
 * styled-components.
 
-Versão online do [Github Interface](https://github.com/benits/github-api-interface). Hospedagem pela [Netlify](https://www.netlify.com/).
+Versão online do [Github Interface](https://objective-bose-66d7e7.netlify.app). Hospedagem pela [Netlify](https://www.netlify.com/).
 
 O foco neste projeto foi em aprender componentização em ReactJS, visto que é o meu primeiro projeto em React.
