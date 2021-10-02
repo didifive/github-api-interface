@@ -17,4 +17,4 @@ Bibliotecas utilizadas:
 * react-tabs;
 * styled-components.
 
-Neste projeto o foco foi em Aprender melhor sobre componentização em ReactJS, visto que é o primeiro projeto em React.
+O foco neste projeto foi em aprender componentização em ReactJS, visto que é o meu primeiro projeto em React.
