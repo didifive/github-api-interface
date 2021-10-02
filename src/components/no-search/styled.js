@@ -5,8 +5,8 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
 
-  h1 {
+  h2 {
     font-weight: bold;
-    font-size: 32px;
+    font-size: 1.5em;
   }
 `;

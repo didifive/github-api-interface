@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 
 export const WrapperTabs = styled(Tabs)`
-  font-size: 16px;
+  font-size: 1em;
   width: 100%;
   margin-top: 16px;
 `;

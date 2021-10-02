@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import * as S from "./styled";
 import useGithub from "../../hooks/github-hooks";
+import Button from "../button";
+import Input from "../input";
 
 const Header = () => {
   const { getUser } = useGithub();
@@ -13,16 +15,20 @@ const Header = () => {
 
   return (
     <header>
-      <S.Wrapper>
-        <input
-          type="text"
-          placeholder="Digite o username para pesquisa..."
-          onChange={(event) => setUsernameForSearch(event.target.value)}
-        />
-        <button type="submit" onClick={submitGetUser}>
-          <span>Buscar</span>
-        </button>
-      </S.Wrapper>
+        <S.Wrapper>
+          <Input
+            type="text"
+            onChange={(event) => setUsernameForSearch(event.target.value)}
+          >
+            Digite o username para pesquisa...
+          </Input>
+          <Button
+            type="submit"
+            onClick={submitGetUser}
+          >
+            Buscar
+          </Button>
+        </S.Wrapper>
     </header>
   );
 };

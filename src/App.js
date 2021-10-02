@@ -4,26 +4,32 @@ import NoSearch from "./components/no-search";
 import Profile from "./components/profile";
 import Repositories from "./components/repositories";
 import useGithub from "./hooks/github-hooks";
+import GlobalStyle from "./global/globalStyles";
+import { ResetCSS } from "./global/resetCSS.js";
 
 const App = () => {
   const { githubState } = useGithub();
   return (
-    <Layout>
-      {githubState.hasUser ? (
-        <>
-          {githubState.loading ? (
-            <p>Loading</p>
-          ) : (
-            <>
-              <Profile />
-              <Repositories />
-            </>
-          )}
-        </>
-      ) : (
-        <NoSearch />
-      )}
-    </Layout>
+    <>
+      <ResetCSS />
+      <GlobalStyle />
+      <Layout>
+        {githubState.hasUser ? (
+          <>
+            {githubState.loading ? (
+              <p>Loading</p>
+            ) : (
+              <>
+                <Profile />
+                <Repositories />
+              </>
+            )}
+          </>
+        ) : (
+          <NoSearch />
+        )}
+      </Layout>
+    </>
   );
 };
 

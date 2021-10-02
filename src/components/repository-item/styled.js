@@ -11,20 +11,20 @@ export const Wrapper = styled.div`
 `;
 
 export const WrapperTitle = styled.h2`
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: bold;
   margin: 8px 0;
 `;
 
 export const WrapperFullName = styled.h2`
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
   margin: 8px 0;
   color: #2d3748;
 `;
 
 export const WrapperLink = styled.a`
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
   margin: 8px 0;
   color: #3182ce;
